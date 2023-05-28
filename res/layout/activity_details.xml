@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative"
+    tools:context=".details">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:text="Service Booking"
+
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/lavender"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="Mechanic Service"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/service_name"
+
+            android:text="Service Provider Name:"
+            android:layout_marginTop="79dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_below="@+id/text"
+                />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_marginTop="72dp"
+        android:text="name"
+        android:layout_toEndOf="@id/service_name"
+        android:layout_marginLeft="50dp"
+        android:textSize="24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_number"
+        android:text="Service Provider Number:"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/service_name"
+        />
+
+
+    <TextView
+        android:id="@+id/phno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:text="9878987878"
+        android:layout_marginLeft="193dp"
+        android:layout_marginTop="49dp"
+        android:hint="Ph no"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/service_rating"
+        android:text="Service Provider Rating:"
+        android:textStyle="bold"
+        android:layout_marginTop="58dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/service_number"
+        />
+
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phno"
+        android:layout_marginLeft="193dp"
+        android:layout_marginTop="37dp"
+        android:text="4"
+
+        android:textSize="30dp" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/select_Time"
+       android:text="select Time"
+       android:layout_below="@id/service_rating"
+       android:layout_marginTop="80dp"
+       android:textStyle="bold"
+       android:textColor="@color/black"
+       android:layout_marginLeft="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select Date"
+      android:layout_toEndOf="@id/select_Time"
+        android:layout_marginTop="76dp"
+        android:layout_below="@id/rating"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="100dp"/>
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="100dp"
+
+
+        android:layout_marginEnd="9dp"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/lavender"
+        android:text="Booking"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="133dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="440dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="505dp"
+        android:hint="Enter Tour Address">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressedit"
+
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</RelativeLayout>
+
+
+

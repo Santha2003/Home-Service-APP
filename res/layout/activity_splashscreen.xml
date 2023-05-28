@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".splashscreen">
+
+    <ImageView
+        android:id="@+id/img_grocery"
+        android:layout_width="81dp"
+        android:layout_height="77dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/gro" />
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_grocery"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="1dp"
+        android:text="Grocery"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="normal"
+
+
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_below="@id/text_1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/black"
+        />
+    <TextView
+        android:id="@+id/text_2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mechanic_service">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+
+
+        android:background="@color/lavender"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Home Service"
+
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/text"
+        android:text="Add the details"
+
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="24dp"
+        android:layout_below="@id/text"
+        android:hint="name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phno"
+        android:layout_below="@id/name"
+        android:hint="Ph no"
+        android:textSize="24dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating"
+        android:layout_below="@id/phno"
+        android:textSize="24dp"
+        android:hint="Rating"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_below="@id/rating"
+        android:textSize="24dp"
+        android:hint="Amount"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btninsert"
+        android:textSize="24dp"
+        android:layout_below="@+id/amount"
+        android:layout_marginTop="20dp"
+        android:text="Insert"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btninsert"
+        android:id="@+id/btnview"
+        android:textSize="24dp"
+
+        android:layout_marginTop="20dp"
+        android:text="View"/>
+
+
+
+</RelativeLayout>

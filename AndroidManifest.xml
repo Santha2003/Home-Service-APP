@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="homeserviceapp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gro"
+        tools:targetApi="31" >
+        <activity
+            android:name=".booking"
+            android:exported="false" />
+        <activity
+            android:name=".mechanic_booking"
+            android:exported="false" />
+        <activity
+            android:name=".maid_booking"
+            android:exported="false" />
+        <activity
+            android:name=".electricain_Booking"
+            android:exported="false" />
+        <activity
+            android:name=".painting_Booking"
+            android:exported="false" />
+        <activity
+            android:name=".plumber_Booking"
+            android:exported="false" />
+        <activity
+            android:name=".cleaning_Booking"
+            android:exported="false" />
+        <activity
+            android:name=".mechanic"
+            android:exported="false" />
+        <activity
+            android:name=".mechanic_service"
+            android:exported="false" />
+        <activity
+            android:name=".painting"
+            android:exported="false" />
+        <activity
+            android:name=".painting_service"
+            android:exported="false" />
+        <activity
+            android:name=".electrician"
+            android:exported="false" />
+        <activity
+            android:name=".plumber"
+            android:exported="false" />
+        <activity
+            android:name=".loginactivity"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".cleaning"
+            android:exported="false" />
+        <activity
+            android:name=".details"
+            android:exported="false" />
+        <activity
+            android:name=".maid"
+            android:exported="false" />
+        <activity
+            android:name=".homescreen"
+            android:exported="false" />
+        <activity
+            android:name=".maid_service"
+            android:exported="false" />
+        <activity
+            android:name=".electrician_service"
+            android:exported="false" />
+        <activity
+            android:name=".plumber_service"
+            android:exported="false" />
+        <activity
+            android:name=".cleaning_service"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
